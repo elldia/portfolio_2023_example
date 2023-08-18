@@ -1,0 +1,98 @@
+/* 반응형 대비 최소제한 너비 설정*/
+header, main {min-width:900px;}
+/* header */
+header {
+    position:fixed; left:0; top:0; width:100%; z-index:999;
+    padding:40px 30px 0 30px;
+}
+header nav {
+    border-top:2px solid #777;
+    border-bottom:5px solid #777;
+    padding:17px;
+    display:flex; justify-content:space-between;
+}
+header nav .gnb {}
+header nav .gnb a {margin-right:40px;font-weight:700;}
+header nav .gnb a:last-child {margin-right:0;}
+header nav .gnb a:hover {color:#F5065C;}
+header nav .sns {}
+header nav .sns span {}
+/* #home */
+main {}
+main > * {padding:0 30px;}
+main #home {
+    background:#fafafa;
+    height:100vh; text-align: center;
+}
+main #home h1 {padding-top:200px;}
+main #home h1 img {}
+main #home .mouse {
+    position:absolute; left:50%; bottom:50px;
+    transform:translateX(-50%);
+}
+main #home .mouse img {animation:mouse_move 1s linear alternate infinite;}
+@keyframes mouse_move {
+    0% {transform:translateY(0)}
+    100% {transform:translateY(-50px)}
+}
+/* #skill */
+main #skill {background:#fff; padding-top:100px; padding-bottom:100px;}
+main #skill h1 {
+    font-size:3.125rem; letter-spacing: -0.02em; padding-bottom:20px;
+    margin-bottom:50px; border-bottom:3px solid #000;
+}
+main #skill .container {
+    height:730px;
+    display:flex; flex-flow:column wrap;/*스킬 9개 수직 줄바꿈으로 배치하는 flex */
+    align-content:space-between;
+}
+main #skill .container li {
+    width:45%;
+    display:flex; flex-flow:row nowrap;/*아이콘, 글자 옆으로 배치하는 flex */
+    margin-bottom: 30px; padding-bottom: 30px;
+    border-bottom: 1px dashed #777;
+}
+main #skill .container li span {}
+main #skill .container li .icon {width:68px;}
+main #skill .container li .icon img {}
+main #skill .container li .contents {
+    width:calc(100% - 68px);
+    font-size:1.25rem; letter-spacing:-0.02em; line-height:40px;
+}
+/* #profile */
+main #profile {}
+main #profile h1 {text-align:center; padding:100px 0;}
+main #profile h1 img {}
+main #profile .container {
+    display:flex; justify-content:center;
+    padding-bottom:100px;
+}
+main #profile .container .photo {width:441px;}
+main #profile .container .photo img {}
+main #profile .container .info {width:50%;}
+main #profile .container .info h2 {margin-bottom:30px; font-size:1.25rem; font-weight:700;}
+main #profile .container .info dl {display:flex; flex-flow:row wrap;}
+main #profile .container .info dl > * {
+    line-height:40px; border-bottom:1px dashed #ccc;
+}
+main #profile .container .info dl dt {width:112px;}
+main #profile .container .info dl dd {width:calc(100% - 112px);}
+/* #project_web1 */
+main #project_web1 {}
+main #project_web1 h1 {
+    font-size:2.875rem; letter-spacing: -0.02em; font-weight:700;
+    text-align:right; margin-bottom:50px;
+}
+main #project_web1 .link {display:flex;}
+main #project_web1 .link a {
+    padding:20px 30px; background:#222; color:#fff;
+    border-radius:10px; margin-left:5px;
+}
+main #project_web1 .link a:hover {filter:brightness(130%) contrast(150%);}
+main #project_web1 .link a:first-child {
+    background:#F5065C; margin-left:0;
+}
+main #project_web1 .project_info {margin:20px 0;}
+main #project_web1 .project_info p {line-height:30px;}
+main #project_web1 .preview {text-align: center;}
+main #project_web1 .preview img {}
